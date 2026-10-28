@@ -42,13 +42,13 @@ This API provides the photo URLs, author names, and other details used to displa
 1. Clone this repository:
 
    ```bash
-   git clone YOUR_REPOSITORY_URL
+   git clone adarshadarsh6305-a11y
    ```
 
 2. Navigate to the project folder:
 
    ```bash
-   cd YOUR_PROJECT_FOLDER
+   cd celebrare-gallery
    ```
 
 3. Install dependencies:
