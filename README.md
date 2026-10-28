@@ -36,10 +36,6 @@ This API provides the photo URLs, author names, and other details used to displa
 
 ## 🚀 Getting Started
 
-### Prerequisites
-
-* Node.js
-* npm
 
 ### Installation
 
