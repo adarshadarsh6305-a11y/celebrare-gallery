@@ -1,16 +1,88 @@
-# React + Vite
+# 📸 Photo Gallery Web App
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A responsive Photo Gallery Web Application built using React, Vite, and Tailwind CSS as part of the Celebrare Frontend React Internship Pre-Screening Assignment.
 
-Currently, two official plugins are available:
+The application fetches photos from the Picsum Photos API and allows users to search by author name and manage their favourite photos.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
 
-## React Compiler
+* **Photo Gallery:** Fetches and displays 30 photos from the Picsum Photos API.
+* **Responsive Design:** Displays photos in a responsive grid for desktop, tablet, and mobile devices.
+* **Search Photos:** Filters photos by author name in real time without additional API requests.
+* **Favourites:** Add or remove photos from favourites using the heart icon.
+* **Persistent Storage:** Saves favourite photos in localStorage, preserving them after page refreshes.
+* **Loading & Error Handling:** Displays a loading indicator while fetching photos and an error message if the request fails.
+* **Custom Hook:** Uses `useFetchPhotos` to separate API logic from the UI.
+* **State Management:** Uses `useReducer` to manage favourite photos.
+* **Performance Optimization:** Uses `useCallback` and `useMemo` for search handling and filtering.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Technologies Used
 
-## Expanding the Oxlint configuration
+* React
+* Vite
+* JavaScript (ES6+)
+* Tailwind CSS
+* Picsum Photos API
+* React Hooks
+* Browser localStorage
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## 🌐 API Reference
+
+**Picsum Photos API**
+
+`https://picsum.photos/v2/list?limit=30`
+
+This API provides the photo URLs, author names, and other details used to display the gallery.
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+* Node.js
+* npm
+
+### Installation
+
+1. Clone this repository:
+
+   ```bash
+   git clone YOUR_REPOSITORY_URL
+   ```
+
+2. Navigate to the project folder:
+
+   ```bash
+   cd YOUR_PROJECT_FOLDER
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Open the local URL shown in your terminal.
+
+## 📂 Key Implementation Details
+
+* **`useFetchPhotos`:** Fetches photos from the API and returns `photos`, `loading`, and `error`.
+* **`useReducer`:** Handles adding and removing favourite photos.
+* **`localStorage`:** Persists favourite selections across page refreshes.
+* **`useCallback`:** Memoizes the search handler function.
+* **`useMemo`:** Computes the filtered photo list when its dependencies change.
+
+## 🎯 Assignment Objective
+
+This project demonstrates practical knowledge of React functional components, Hooks, API integration, state management, localStorage, and responsive UI development.
+
+## 👨‍💻 Author
+
+**M. Adarsh**
+
+GitHub: https://github.com/adarshadarsh6305-a11y
